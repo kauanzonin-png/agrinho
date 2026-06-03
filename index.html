@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho - Strong Agriculture, Sustainable Future</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🌱 Agrinho</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#practices" class="nav-link">Practices</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Strong Agriculture, Sustainable Future</h1>
+            <p>Balancing Production with Environmental Stewardship</p>
+            <button class="cta-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Agrinho</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">🌾</div>
+                    <h3>Production Excellence</h3>
+                    <p>Modern farming techniques that maximize yield while minimizing resource waste. We believe in productive agriculture that feeds the world.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🌍</div>
+                    <h3>Environmental Balance</h3>
+                    <p>Protecting soil, water, and ecosystems for future generations. Sustainable practices are at the core of our mission.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">💪</div>
+                    <h3>Community Strength</h3>
+                    <p>Empowering farmers with knowledge and resources to build resilient agricultural communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="practices" class="practices">
+        <div class="container">
+            <h2>Sustainable Practices</h2>
+            <div class="practices-grid">
+                <div class="practice-item">
+                    <div class="practice-number">1</div>
+                    <h3>Crop Rotation</h3>
+                    <p>Alternating crops to maintain soil health and reduce pest pressure naturally.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">2</div>
+                    <h3>Organic Composting</h3>
+                    <p>Converting organic waste into nutrient-rich soil amendments.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 78%"></div>
+                    </div>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">3</div>
+                    <h3>Water Conservation</h3>
+                    <p>Efficient irrigation systems that reduce water consumption by up to 40%.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%"></div>
+                    </div>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">4</div>
+                    <h3>Biodiversity Support</h3>
+                    <p>Creating habitats for beneficial insects and wildlife on farms.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 72%"></div>
+                    </div>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">5</div>
+                    <h3>Soil Health</h3>
+                    <p>Regular monitoring and improvement of soil quality and structure.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">6</div>
+                    <h3>Carbon Sequestration</h3>
+                    <p>Farming methods that capture and store atmospheric carbon.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 id="stat1">0</h3>
+                    <p>Farmers Reached</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat2">0</h3>
+                    <p>Acres Protected</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat3">0</h3>
+                    <p>Tons CO₂ Offset</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat4">0</h3>
+                    <p>Liters Water Saved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="successMessage" class="success-message" style="display: none;">✓ Thank you! We'll get back to you soon.</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Agrinho - Strong Agriculture, Sustainable Future | Building a better agricultural tomorrow</p>
+            <div class="social-links">
+                <a href="#">🌐 Website</a>
+                <a href="#">📘 Facebook</a>
+                <a href="#">🐦 Twitter</a>
+                <a href="#">📷 Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
